@@ -25,10 +25,13 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I2-Fo-A22">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I2-Fo-A22">
                     <rect key="frame" x="16" y="443" width="343" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.29803921568627451" green="0.76470588235294112" blue="1" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="dqm-0E-C9L"/>
+                        <constraint firstAttribute="width" constant="343" id="m7A-kT-DGk"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <state key="normal" title="Перевозка">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,10 +45,13 @@
                         <action selector="transportationAction:" destination="-1" eventType="touchUpInside" id="6Kx-pV-nb6"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ss3-Al-RzS">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ss3-Al-RzS">
                     <rect key="frame" x="16" y="548" width="343" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.29803921570000003" green="0.76470588240000004" blue="1" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="343" id="A50-KN-tBy"/>
+                        <constraint firstAttribute="height" constant="50" id="Po5-7m-KVn"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <state key="normal" title="Аренда">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,29 +65,56 @@
                         <action selector="rentAction:" destination="-1" eventType="touchUpInside" id="WQr-1q-1hV"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Выберите вид услуги" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZM-uK-cOc">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите вид услуги" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZM-uK-cOc">
                     <rect key="frame" x="53" y="169" width="270" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="F3x-Br-l6n"/>
+                        <constraint firstAttribute="width" constant="270" id="fvQ-Di-oL8"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Доставка в пункт назначения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O80-sv-1ea">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Доставка в пункт назначения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O80-sv-1ea">
                     <rect key="frame" x="88" y="499" width="199" height="19"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="199" id="vz2-st-cab"/>
+                        <constraint firstAttribute="height" constant="19" id="xJF-8k-8Qn"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.5607843137254902" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Временное владение и пользование ТС с водителем" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWx-36-iQS">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Временное владение и пользование ТС с водителем" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWx-36-iQS">
                     <rect key="frame" x="52.666666666666657" y="604" width="270" height="38"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="270" id="1dd-So-Jww"/>
+                        <constraint firstAttribute="height" constant="38" id="vq0-0C-ayB"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.56078431370000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="O80-sv-1ea" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="88" id="0Cx-yl-Xfr"/>
+                <constraint firstItem="Ss3-Al-RzS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="2S6-g7-ccg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="O80-sv-1ea" secondAttribute="trailing" constant="88" id="4ra-vl-ACB"/>
+                <constraint firstItem="LWx-36-iQS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="52.670000000000002" id="6vl-eM-aZB"/>
+                <constraint firstItem="PZM-uK-cOc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="125" id="9jX-GJ-t78"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3I2-Fo-A22" secondAttribute="trailing" constant="16" id="P6Z-lf-7Td"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LWx-36-iQS" secondAttribute="trailing" constant="52.329999999999998" id="TQO-u0-2Fp"/>
+                <constraint firstItem="PZM-uK-cOc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="53" id="gWo-a9-3ca"/>
+                <constraint firstItem="3I2-Fo-A22" firstAttribute="top" secondItem="PZM-uK-cOc" secondAttribute="bottom" constant="240" id="hdU-om-6IZ"/>
+                <constraint firstItem="LWx-36-iQS" firstAttribute="top" secondItem="Ss3-Al-RzS" secondAttribute="bottom" constant="6" id="hjQ-zh-ti6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PZM-uK-cOc" secondAttribute="trailing" constant="52" id="ktA-fD-nef"/>
+                <constraint firstItem="Ss3-Al-RzS" firstAttribute="top" secondItem="O80-sv-1ea" secondAttribute="bottom" constant="30" id="l1K-HT-4Pd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LWx-36-iQS" secondAttribute="bottom" constant="136" id="oAW-l9-UVN"/>
+                <constraint firstItem="O80-sv-1ea" firstAttribute="top" secondItem="3I2-Fo-A22" secondAttribute="bottom" constant="6" id="pFa-WK-ohv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ss3-Al-RzS" secondAttribute="trailing" constant="16" id="pbx-eA-cuI"/>
+                <constraint firstItem="3I2-Fo-A22" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="xhg-Ps-7Wi"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
         </view>
