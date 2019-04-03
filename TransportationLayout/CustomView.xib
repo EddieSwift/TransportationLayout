@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,15 +22,14 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I2-Fo-A22">
-                    <rect key="frame" x="16" y="443" width="343" height="50"/>
+                    <rect key="frame" x="16" y="492" width="382" height="50"/>
                     <color key="backgroundColor" red="0.29803921568627451" green="0.76470588235294112" blue="1" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="dqm-0E-C9L"/>
-                        <constraint firstAttribute="width" constant="343" id="m7A-kT-DGk"/>
+                        <constraint firstAttribute="height" constant="50" id="ZqD-wp-a2S"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <state key="normal" title="Перевозка">
@@ -46,11 +45,10 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ss3-Al-RzS">
-                    <rect key="frame" x="16" y="548" width="343" height="50"/>
+                    <rect key="frame" x="16" y="608" width="382" height="50"/>
                     <color key="backgroundColor" red="0.29803921570000003" green="0.76470588240000004" blue="1" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="343" id="A50-KN-tBy"/>
-                        <constraint firstAttribute="height" constant="50" id="Po5-7m-KVn"/>
+                        <constraint firstAttribute="height" constant="50" id="kLg-0k-9BK"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <state key="normal" title="Аренда">
@@ -65,31 +63,31 @@
                         <action selector="rentAction:" destination="-1" eventType="touchUpInside" id="WQr-1q-1hV"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите вид услуги" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZM-uK-cOc">
-                    <rect key="frame" x="53" y="169" width="270" height="34"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите вид услуги" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZM-uK-cOc">
+                    <rect key="frame" x="72" y="187" width="270" height="34"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="34" id="F3x-Br-l6n"/>
-                        <constraint firstAttribute="width" constant="270" id="fvQ-Di-oL8"/>
+                        <constraint firstAttribute="height" constant="34" id="ktK-xt-9RC"/>
+                        <constraint firstAttribute="width" constant="270" id="zcq-ol-A2K"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Доставка в пункт назначения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O80-sv-1ea">
-                    <rect key="frame" x="88" y="499" width="199" height="19"/>
+                    <rect key="frame" x="108" y="552" width="199" height="19"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="199" id="vz2-st-cab"/>
-                        <constraint firstAttribute="height" constant="19" id="xJF-8k-8Qn"/>
+                        <constraint firstAttribute="width" constant="199" id="N54-fA-8mr"/>
+                        <constraint firstAttribute="height" constant="19" id="O3X-aU-IYN"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.5607843137254902" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Временное владение и пользование ТС с водителем" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWx-36-iQS">
-                    <rect key="frame" x="52.666666666666657" y="604" width="270" height="38"/>
+                    <rect key="frame" x="72" y="670" width="270" height="38"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="270" id="1dd-So-Jww"/>
-                        <constraint firstAttribute="height" constant="38" id="vq0-0C-ayB"/>
+                        <constraint firstAttribute="height" constant="38" id="Zhv-cA-3ci"/>
+                        <constraint firstAttribute="width" constant="270" id="jEJ-BQ-lkU"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.56078431370000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
@@ -98,22 +96,18 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="O80-sv-1ea" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="88" id="0Cx-yl-Xfr"/>
-                <constraint firstItem="Ss3-Al-RzS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="2S6-g7-ccg"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="O80-sv-1ea" secondAttribute="trailing" constant="88" id="4ra-vl-ACB"/>
-                <constraint firstItem="LWx-36-iQS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="52.670000000000002" id="6vl-eM-aZB"/>
-                <constraint firstItem="PZM-uK-cOc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="125" id="9jX-GJ-t78"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3I2-Fo-A22" secondAttribute="trailing" constant="16" id="P6Z-lf-7Td"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LWx-36-iQS" secondAttribute="trailing" constant="52.329999999999998" id="TQO-u0-2Fp"/>
-                <constraint firstItem="PZM-uK-cOc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="53" id="gWo-a9-3ca"/>
-                <constraint firstItem="3I2-Fo-A22" firstAttribute="top" secondItem="PZM-uK-cOc" secondAttribute="bottom" constant="240" id="hdU-om-6IZ"/>
-                <constraint firstItem="LWx-36-iQS" firstAttribute="top" secondItem="Ss3-Al-RzS" secondAttribute="bottom" constant="6" id="hjQ-zh-ti6"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PZM-uK-cOc" secondAttribute="trailing" constant="52" id="ktA-fD-nef"/>
-                <constraint firstItem="Ss3-Al-RzS" firstAttribute="top" secondItem="O80-sv-1ea" secondAttribute="bottom" constant="30" id="l1K-HT-4Pd"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LWx-36-iQS" secondAttribute="bottom" constant="136" id="oAW-l9-UVN"/>
-                <constraint firstItem="O80-sv-1ea" firstAttribute="top" secondItem="3I2-Fo-A22" secondAttribute="bottom" constant="6" id="pFa-WK-ohv"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ss3-Al-RzS" secondAttribute="trailing" constant="16" id="pbx-eA-cuI"/>
-                <constraint firstItem="3I2-Fo-A22" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="xhg-Ps-7Wi"/>
+                <constraint firstItem="3I2-Fo-A22" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2ml-ih-tvI"/>
+                <constraint firstItem="LWx-36-iQS" firstAttribute="centerX" secondItem="PZM-uK-cOc" secondAttribute="centerX" id="4yc-XW-PlM"/>
+                <constraint firstItem="PZM-uK-cOc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="143" id="62g-1Q-Nc6"/>
+                <constraint firstItem="Ss3-Al-RzS" firstAttribute="centerX" secondItem="PZM-uK-cOc" secondAttribute="centerX" id="7K7-uc-rM2"/>
+                <constraint firstItem="3I2-Fo-A22" firstAttribute="leading" secondItem="Ss3-Al-RzS" secondAttribute="leading" id="F0P-i7-3Pr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LWx-36-iQS" secondAttribute="bottom" constant="154" id="IVH-EM-Kmy"/>
+                <constraint firstItem="Ss3-Al-RzS" firstAttribute="top" secondItem="O80-sv-1ea" secondAttribute="bottom" constant="37" id="Kb1-5s-mrp"/>
+                <constraint firstItem="O80-sv-1ea" firstAttribute="centerX" secondItem="PZM-uK-cOc" secondAttribute="centerX" id="P1G-IA-ETb"/>
+                <constraint firstItem="3I2-Fo-A22" firstAttribute="centerX" secondItem="PZM-uK-cOc" secondAttribute="centerX" id="T0c-Wu-bSk"/>
+                <constraint firstItem="O80-sv-1ea" firstAttribute="top" secondItem="3I2-Fo-A22" secondAttribute="bottom" constant="10" id="jtP-RV-idx"/>
+                <constraint firstItem="3I2-Fo-A22" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="nXX-hg-2CJ"/>
+                <constraint firstItem="LWx-36-iQS" firstAttribute="top" secondItem="Ss3-Al-RzS" secondAttribute="bottom" constant="12" id="vtE-cT-VeN"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
